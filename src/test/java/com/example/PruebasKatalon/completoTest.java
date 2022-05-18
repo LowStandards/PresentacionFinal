@@ -35,7 +35,7 @@ public class completo {
   @Test
   @Order(1)
   public void a() throws Exception {
-	  driver.get("https://mern-crud.herokuapp.com/");
+	  driver.get("http://localhost:3000/");
 	    driver.findElement(By.xpath("//div[@id='root']/div/div[2]/button")).click();
 	    driver.findElement(By.name("name")).click();
 	    driver.findElement(By.name("name")).clear();
@@ -59,7 +59,7 @@ public class completo {
   @Test
   @Order(2)
   public void b() throws Exception {
-	  driver.get("https://mern-crud.herokuapp.com/");
+	  driver.get("http://localhost:3000/");
 	    driver.findElement(By.xpath("//div[@id='root']/div/div[2]/button")).click();
 	    driver.findElement(By.name("name")).click();
 	    driver.findElement(By.name("name")).clear();
@@ -89,14 +89,14 @@ public class completo {
   @Test
   @Order(3)
   public void c() throws Exception {
-	  driver.get("https://mern-crud.herokuapp.com/");
+	  driver.get("http://localhost:3000/");
   assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*Awela[\\s\\S]*$"));
   }
   
   @Test
   @Order(4)
   public void testBorrar() throws Exception {
-    driver.get("https://mern-crud.herokuapp.com/");
+    driver.get("http://localhost:3000/");
     driver.findElement(By.xpath("//div[@id='root']/div/div[2]/button")).click();
     driver.findElement(By.name("name")).click();
     driver.findElement(By.name("name")).clear();
